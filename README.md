@@ -1,109 +1,146 @@
-# assignment-1st-python
-
-# Python Programming Assignment 02
+# assignment-2nd-python
+# Python Programming Assignment 01
 
 **<span style="color: green; font-weight: bold;">Instructions:</span> Implement Python programs to accomplish the following tasks**
 
-**<span style="color: green; font-weight: bold;">Hint:</span>** When asking the user for input in your Python program, use the `input()` method. This method allows you to prompt the user for information and capture their response.
+1. **Age Assignments Based on the Riddle**
 
-1. **Add two numbers**
+   - **Problem Statement:** Write a program to solve this age-related riddle!
+     Anton, Beth, Chen, Drew, and Ethan are all friends. Their ages are as follows:
+     - Anton is 21 years old.
+     - Beth is 6 years older than Anton.
+     - Chen is 20 years older than Beth.
+     - Drew is as old as Chen's age plus Anton's age.
+     - Ethan is the same age as Chen.
+   - Your code should store each person's age to a variable and print their names and ages at the end.
+     ```python
+     Anton is 3
+     Beth is 4
+     Chen is 5
+     Drew is 6
+     Ethan is 7
+     ```
 
-   Write a Python program that takes two integer inputs from the user and calculates their sum. The program should perform the following tasks:
+2. **Formatted String Interpolation**
 
-   1. Prompt the user to enter the first number.
-   2. Read the input and convert it to an integer.
-   3. Prompt the user to enter the second number.
-   4. Read the input and convert it to an integer.
-   5. Calculate the sum of the two numbers.
+   - **Task:** Given the variables `name`, `age`, and `city`, use f-strings to construct a sentence that describes a person using these variables.
+     ```python
+     name:str = "Alice"
+     age:int = 30
+     city:str = "New York"
+     ```
+   - **Instructions:** Use an f-string to create a sentence in the format: `"Alice is 30 years old and lives in New York."`
+   - **Expected Output:**
+     ```
+     Alice is 30 years old and lives in New York.
+     ```
 
-   Print the total sum with an appropriate message.
+3. **String Manipulation**
 
-2. **Agreement Boot**
+   - **Task:** Given the string `s`, use string methods to:
+     - **Capitalize the first letter:** make the first character uppercase and the rest of the string lowercase.
+     - **Convert to uppercase:** change all characters in the string to uppercase.
+     - **Convert to lowercase:** change all characters in the string to lowercase.
+     ```python
+     s:str = "hElLo WoRlD"
+     ```
+   - **Expected Output:**
+     ```
+     Hello world
+     HELLO WORLD
+     hello world
+     ```
 
-   Write a program which asks the user what their favorite animal is, and then always responds with "My favorite animal is also \_\_\_!" (the blank should be filled in with the user-inputted animal, of course).
+4. **Substring Search**
 
-   Here's a sample run of the program (user input is in bold italics - note the space between the prompt and the user input!):
+   - **Task:** Given the string `s`, use string methods to:
+     - **Find the index of "fox":** get the starting index of the substring "fox". If "fox" is not found, it should return -1.
+     - **Count occurrences of "the":** Use the string's built-in method to count how many times the substring "the" appears in the string.
+     ```python
+     s:str ="the quick brown fox jumps over the lazy dog"
+     ```
+   - **Expected Output:**
+     ```
+     index of 'fox' is 16
+     'the' appears 2 times
+     ```
 
-   ```
-   What's your favorite animal? cow
+5. **String Replacement**
 
-   My favorite animal is also cow!
-   ```
+   - **Task:** Given the string `s`, use string methods to:
+     - **Replace "Python" with "Java":** substitute "Python" with "Java".
+     ```python
+     s:str ="I love programming in Python"
+     ```
+   - **Expected Output:**
+     ```
+     I love programming in Java
+     ```
 
-3. **Fahrenheit to Celsius**
-   Write a program which prompts the user for a temperature in Fahrenheit (this can be a number with decimal places!) and outputs the temperature converted to Celsius.
+6. **String Splitting and Joining**
 
-   The Celsius scale is widely used to measure temperature, but places still use Fahrenheit. Fahrenheit is another unit for temperature, but the scale is different from Celsius -- for example, 0 degrees Celsius is 32 degrees Fahrenheit!
+   - **Task:** Given the string `s`, use string methods to:
+     - **Split into a list:** break the string into a list of substrings based on the delimiter `,`.
+     - **Join with spaces:** combine the list of substrings back into a single string, with each element separated by a space.
+     ```python
+     s:str ="apple,banana,cherry,dates"
+     ```
+   - **Expected Output:**
+     ```
+     ["apple", "banana", "cherry", "dates"]
+     apple banana cherry dates
+     ```
 
-   The equation you should use for converting from Fahrenheit to Celsius is the following:
+7. **String Stripping and Justifying**
 
-   degrees_celsius = (degrees_fahrenheit - 32) \* 5.0/9.0
+   - **Task:** Given the string `s`, use string methods to:
+     - **Remove leading/trailing spaces:** remove all leading and trailing whitespace characters from the string.
+     - **Left justify with '\*':** left justify the string within a field of width 20, using `*` as the fill character.
+     - **Right justify with '\*':** right justify the string within a field of width 20, using `*` as the fill character.
+     ```python
+     s:str ="   Python is fun!   "
+     ```
+   - **Expected Output:**
+     ```
+     Python is fun!
+     Python is fun!*****
+     *****Python is fun!
+     ```
 
-   (Note. The .0 after the 5 and 9 matters in the line above!!!)
+8. **Convert an integer to its binary representation**
 
-   Here's a sample run of the program (user input is in bold italics):
+   - **Task:** Given an integer `num`
+     - Obtain the binary representation of `num`
+     ```python
+     num:int = 45
+     ```
+   - **Expected Output:**
+     ```
+     Binary representation : 0b101101
+     ```
 
-   ```
-   Enter temperature in Fahrenheit: 76
+9. **Calculate Powers of Numbers.**
 
-   Temperature: 76.0F = 24.444444444444443C
-   ```
+   - **Task:** Given two integers `base` and `exponent`
+     - Compute `base` raised to the power of `exponent`.
+     ```python
+     base:int = 3
+     exponent:int = 4
+     ```
+   - **Expected Output:**
+     ```
+     Power result: 81
+     ```
 
-4. **Triangle Perimeters**
-   Prompt the user to enter the lengths of each side of a triangle and then calculate and print the perimeter of the triangle (the sum of all of the side lengths).
+10. **Round floating-point numbers**
 
-   Here's a sample run of the program (user input is in bold italics):
-
-   ```
-   What is the length of side 1? 3
-
-   What is the length of side 2? 4
-
-   What is the length of side 3? 5.5
-
-   The perimeter of the triangle is 12.5
-   ```
-
-5. **Square Number**
-   Ask the user for a number and print its square (the product of the number times itself).
-
-   Here's a sample run of the program (user input is in bold italics):
-
-   ```
-   Type a number to see its square: 4
-
-   4.0 squared is 16.0
-   ```
-
-6. **Delete a number**
-   Consider a list named `numbers` with the elements `[1, 2, 3, 4, 5]`. Use list method to delete the number 3?
-
-7. **Creating a list**
-   You have two lists:
-
-   - list1 with elements [1, 2, 3]
-   - list2 with elements [4, 5, 6].
-   - Create a program using list method to add the elements of list2 to list1.
-
-8. **Pop method**
-   You have a list named items with the elements `[10, 20, 30, 40]`. If you use the `pop` method without any arguments, what will the list look like and what value will be removed?
-
-9. **Index Method**
-   You have a list called colors with the elements `['red', 'blue', 'green', 'yellow']`. If you use the index method to find the position of 'green', what will the index be?
-
-### Challenge Questions
-
-10. **Get last element**
-    Fill out the function `get_last_element(lst)` which takes in a list lst as a parameter and prints the last element in the list. The list is guaranteed to be non-empty, but there are no guarantees on its length.
-
-11. **Get a List**
-    Write a program which continuously asks the user to enter values which are added one by one into a list. When the user presses enter without typing anything, print the list.
-
-    Here's a sample run (user input is in blue):
-
-    ```
-    Enter a value: 1
-    Enter a value: 2
-    Enter a value: 3
-    Enter a value:
-    Here's the list: ['1', '2', '3']
+    - **Task:** Given a floating-point number `value`
+      - Round `value` to the nearest integer.
+      - Round `value` to two decimal places.
+      ```python
+      value:float = 12.34567
+      ```
+    - **Expected Output:**
+      ```
+      Rounded to nearest integer: 12
+      Rounded to two decimal places: 12.35
