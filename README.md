@@ -1,4 +1,4 @@
-# assignment-2nd-python
+# assignment-1st-python
 # Python Programming Assignment 01
 
 **<span style="color: green; font-weight: bold;">Instructions:</span> Implement Python programs to accomplish the following tasks**
